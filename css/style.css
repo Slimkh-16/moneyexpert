@@ -1,0 +1,548 @@
+@import url(reset.css);
+b, strong {
+  font-weight: normal;
+  font-family: 'OpenSansBold',sans-serif;
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .container:before,
+.clearfix:after, .container:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after, .container:after {
+  clear: both;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-color: #0e76bc;
+  background-color: #0e76bc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-width: 1px 1px 1px 2px;
+  border-color: #0e76bc;
+  background-color: #0e76bc;
+}
+
+::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #cecece;
+}
+
+::-webkit-scrollbar-track:hover {
+  border-left: solid 1px #cecece;
+  background-color: #cecece;
+}
+
+#wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  position: relative;
+  z-index: 7;
+}
+
+body.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #3facd6;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  text-align: center;
+}
+.logo a {
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.logo-larg {
+  display: block;
+  font-size: 50px;
+  line-height: 56px;
+  color: #3facd6;
+  text-transform: uppercase;
+  font-family: 'OpenSansBold',sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.bank-item {
+  float: left;
+  overflow: hidden;
+  border: 1px solid #cecece;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.bank-item:hover {
+  border-color: #3facd6;
+}
+
+.bank-number {
+  text-align: center;
+  padding: 2.5px 0;
+  font-size: 18px;
+  color: #000;
+  background: #EAE9E9;
+}
+
+.bank-logo {
+  height: 80px;
+  line-height: 100px;
+  text-align: center;
+  position: relative;
+}
+.bank-logo img {
+  position: absolute;
+  max-width: 95%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.bank-name {
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.bank-item:hover .bank-name {
+  color: #3facd6;
+}
+
+.bank-button {
+  padding: 5px;
+  background: #cecece;
+}
+.bank-button a {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  -moz-border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.bank-button a:last-child {
+  margin-bottom: 0;
+}
+.bank-button a.view {
+  background: #344556;
+}
+.bank-button a.view:hover {
+  background: #3facd6;
+}
+.bank-button a.website {
+  background: #00b834;
+}
+.bank-button a.website:hover {
+  background: #00DC2E;
+}
+
+.bank-container {
+  padding: 20px 0 0;
+}
+
+.bank-raiting {
+  padding: 20px 0;
+  border-bottom: 1px solid #cecece;
+}
+
+.bank-raiting-nav {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cecece;
+}
+.bank-raiting-nav ul {
+  text-align: center;
+}
+.bank-raiting-nav ul li {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #cecece;
+  border-bottom: none;
+  padding: 5px;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.bank-raiting-nav ul li:hover {
+  background: #000;
+  color: #fff;
+}
+.bank-raiting-nav ul li.active {
+  background: #0087cc;
+  color: #fff;
+  border-color: #0087cc;
+}
+
+.raiting-bank {
+  display: block;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  padding-bottom: 20px;
+  height: 220px;
+  position: relative;
+}
+
+.rait {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 0;
+  margin: auto;
+  background: #0087cc;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.rait:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70px;
+  height: 200px;
+  background: #ededed;
+}
+
+.tek-tr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.top-section {
+  position: relative;
+}
+
+.bank-table-head {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #3facd6;
+}
+
+.bank-table {
+  padding: 15px 0;
+  width: 100%;
+}
+.bank-table table {
+  width: 100%;
+}
+.bank-table table td, .bank-table table th {
+  padding: 5px;
+  vertical-align: middle;
+  border: 1px solid #cecece;
+  border-collapse: collapse;
+  text-align: center;
+}
+.bank-table table th {
+  color: #3facd6;
+  font-family: 'OpenSansBold',sans-serif;
+  font-size: 18px;
+}
+.bank-table table th img {
+  margin: 10px auto 0;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.bank-table tr td:nth-of-type(2n) {
+  background: #c7e4ef;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  z-index: 50;
+  width: 60px;
+  height: 60px;
+  background-position: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #60ACFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 0.5;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.fht-fixed-column .fht-tbody, .fht-fixed-column .fht-thead {
+  z-index: 5;
+}
+
+.fht-fixed-column .fht-tbody td, .fht-fixed-column .fht-thead th {
+  background: #fff;
+}
+
+.above-footer {
+  height: 57px;
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+  margin-top: -57px;
+  border-top: 1px solid #cecece;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.bank-info {
+  padding: 15px 0;
+}
+
+.bank-info__head {
+  text-align: center;
+  font-family: 'OpenSansBold',sans-serif;
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #3facd6;
+}
+
+.bank-info__img {
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.bank-info__middle {
+  padding: 10px 0;
+}
+
+.plus {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'OpenSansBold',sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: green;
+}
+
+.plus-list li {
+  padding-left: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.plus-list li:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: green;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.minus {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-family: 'OpenSansBold',sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: red;
+}
+
+.minus-list li {
+  padding-left: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.minus-list li:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: red;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .bank-table-head {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo-larg {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .bank-table-head {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .bank-raiting-nav ul li {
+    margin: 0;
+  }
+
+  .minus-list li:before, .plus-list li:before {
+    top: 6px;
+  }
+
+  .footer {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .bank-info__img {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 535px) {
+  .bank-raiting-nav ul li {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bank-table table th {
+    font-size: 14px;
+  }
+
+  .bank-table table th img {
+    max-width: 120px;
+  }
+
+  .bank-info__img {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+  .bank-info__img img {
+    margin: 0 auto;
+  }
+
+  td, th {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  td:first-child, th:first-child {
+    max-width: 100px;
+  }
+}
