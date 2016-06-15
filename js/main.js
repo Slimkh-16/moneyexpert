@@ -94,7 +94,7 @@ function rait() {
   var raitBlockText = document.querySelectorAll('.tek-tr');
   for(var i = 0; i < raitBlock.length; i++) {
     var data_rt_1 = raitBlock[i].getAttribute('data-rt-1'),
-        data_rt_h = Math.ceil(data_rt_1/10*200);
+        data_rt_h = Math.ceil(data_rt_1/10*100);
         raitBlock[i].style.height= data_rt_h + 'px';
         raitBlockText[i].innerHTML = data_rt_1 + ' / 10';
   }
@@ -111,7 +111,7 @@ function tekRt(obj){
   var rtBlockText = document.querySelectorAll('.tek-tr');
   for(var i = 0; i < rtBlock.length; i++) {
     var data_rt = rtBlock[i].getAttribute('data-rt-'+ data_filter +''),
-        data_rt_h = Math.ceil(data_rt/10*200);
+        data_rt_h = Math.ceil(data_rt/10*100);
         rtBlock[i].style.height= data_rt_h + 'px';
         rtBlockText[i].innerHTML = data_rt + ' / 10';
   }
@@ -124,18 +124,24 @@ function heightTable() {
 // heaight table
 $(window).load(function(){
   $('#myTable').fixedHeaderTable({
-    altClass: 'odd',
-    footer: true,
+    // altClass: 'odd',
+    // footer: false,
     fixedColumns: 1,
+    // autoResize: true
+    footer: false,
+    cloneHeadToFoot: false,
+    // fixedColumns: true,
     autoResize: true
   });
 });
 $(window).resize(function(){
   $('#myTable').fixedHeaderTable('destroy');
   $('#myTable').fixedHeaderTable({
-    altClass: 'odd',
-    footer: true,
+    // altClass: 'odd',
     fixedColumns: 1,
+    footer: false,
+    cloneHeadToFoot: false,
+    fixedColumns: true,
     autoResize: true
   });
 })

@@ -24,7 +24,7 @@ ul,nav{list-style:none;}
 input:focus, button:focus,a:focus, textarea:focus, select:focus{outline:none !important;}
 textarea{resize:none;}
 html, body{height:100%;}
-body{font:16px/20px 'OpenSansRegular', verdana, sans-serif;background-color:#fff;min-width:320px;color:#565656;margin:0 auto !important;overflow-x:hidden;overflow-y:scroll;}
+body{font:16px/24px 'OpenSansRegular', verdana, sans-serif;background-color:#fff;min-width:320px;color:#565656;margin:0 auto !important;overflow-x:hidden;overflow-y:scroll;}
 section{max-width:100%;overflow:hidden;}
 a{color:#292929;text-decoration:none;}
 a:hover, a:active, a:focus{text-decoration:none;color:#00548e;}
