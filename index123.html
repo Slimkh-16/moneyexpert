@@ -32,21 +32,67 @@
     </div>
   </div>
   <!-- PRELOADER -->
+  <!-- visible table head -->
+  <div class="bank-table__row bank-table--head bank-table--head--fix">
+    <div class="bank-table-left-col ">
+      <div class="bank-table-left__cell">
+        <span>Название организации</span>
+      </div>
+    </div>
+    <div class="bank-table-slider">
+      <div class="swiper-container tbl-slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/bank9.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank12.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank11.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank14.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank8.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank10.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank13.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bank5.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- visible table head -->
   <div id="wrapper" class="main-content">
     <!--wrapper start-->
     <!-- header SECTION-->
     <header id="header" class="header clearfix">
       <div class="container">
         <div class="logo">
-          <a href="#">
+          <a href="about-us.html">
             <span class="logo-larg">Money Expert</span>
             <span class="logo-title">Сравните лучшие -  выберите лучшее</span>
           </a>
+        </div>
+        <div class="laung-box">
+          <span>RU</span>
+          <div class="drop-laung">
+            <a href="#">UA</a>
+          </div>
+        </div>
+        <div class="nav-head">
+          <ul>
+            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="#compare" class="js_to">Сравнения</a></li>
+            <li><a href="bank.html">Обзоры</a></li>
+          </ul>
         </div>
       </div>
     </header>
     <!-- header SECTION -->
     <section class="container">
+      <div class="text-block">
+        <i>Оформить кредит, не выходя из дома и с минимальными усилиями - удобный способ  решить свои финансовые трудности. Если раньше такой вид кредитования был доступен только для жителей зарубежных стран, то теперь и на Украине работают сервисы (кредитные организации), которые помогут гражданам Украины решить возникшие проблемы с деньгами быстро и без утомительных проверок личности. Кредитные организации свели до минимума общение с клиентами, организовав работу с ними удаленно(через интернет) или сократив  время пребывания клиентов в отделениях компаний . Сегодня оформить кредит онлайн не сложно при наличии мобильного телефона, планшета, ноутбука или компьютера, а также доступа к сети Интернет. Процедура оформления заявок на сайте кредитных организаций занимает до 30 минут и в большинстве случаев выполняется круглосуточно. После заполнения анкеты, пользователю остается лишь дождаться ответа в виде СМС-сообщения, телефонного звонка или письма по электронной почте. При положительном решении, деньги можно быстро получить уже через несколько минут на банковскую  пластиковую карту или наличными в отделении компании.</i>
+        <i>Несмотря на доступность быстрых кредитов и широкий выбор кредитных организаций, обращаться за быстрыми кредитами могут только  совершеннолетние граждане. Чтоб предварительно сравнить положительные и отрицательные стороны компаний, которые предоставляют услуги быстрого кредитования  и создан  наш сервис Moneyexpert. Пусть каждый сам решит нужно ему пользоваться услугами микрофинансовых организаций или нет. Взять  кредит несложно, а вернуть, порой, проблематично. </i>
+      </div>
       <div class="top-section">
         <div class="bank-container swiper-container">
           <div class="swiper-wrapper">
@@ -206,13 +252,13 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next bank-next"></div>
-        <div class="swiper-button-prev bank-prev"></div>
+        <!--         <div class="swiper-button-next bank-next"></div>
+        <div class="swiper-button-prev bank-prev"></div> -->
         <div class="bank-raiting">
           <div class="bank-raiting-nav">
             <ul>
               <li data-filter="1" class="active" onclick="tekRt(this)">Общий рейтинг</li>
-<!--               <li data-filter="2" onclick="tekRt(this)">Рейтинг1</li>
+              <!--               <li data-filter="2" onclick="tekRt(this)">Рейтинг1</li>
               <li data-filter="3" onclick="tekRt(this)">Рейтинг2</li>
               <li data-filter="4" onclick="tekRt(this)">Рейтинг3</li> -->
             </ul>
@@ -309,10 +355,1225 @@
           </div>
         </div>
       </div>
-      <div class="bank-table">
-        <div class="bank-table-head">Сравнительная таблица кредитных организаций</div>
+      <div class="swiper-button-next table-next"></div>
+      <div class="swiper-button-prev table-prev"></div>
+      <div class="container-bank">
+        
+      </div>
+      <div class="bank-table" id="compare">
         <div class="bank-table-box">
-          <table  id="myTable" class="tbl" cellpadding="0" cellspacing="0">
+          <div class="bank-table__row bank-table--head">
+            <div class="bank-table-left-col ">
+              <div class="bank-table-left__cell">
+                <span>Название организации</span>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container tbl-slider-1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/bank9.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank12.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank11.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank14.png" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank7.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank8.png" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank10.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank6.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank13.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/bank5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table-head">Кредитные особенности</div>
+          <div class="bank-table__row">
+            
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell ">
+                <span class="_height">Сумма кредита, грн. макс. при первом кредите</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Сумма денежных средств, которые может предоставить кредитная организация(сервис) заемщику в максимально допустимом (возможном) размере при подаче заявки на кредит на этом сервисе в первый раз.  Большинство сервисов обычно не выдают максимально доступную сумму при первом кредите, если Ваша кредитная история  в других финансовых организациях с просроченными платежами. Это означает Ваша кредитная история  в других финансовых организациях влияет на сумму запрашиваемого кредита.</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">4000</div>
+                  <div class="swiper-slide _height">3000</div>
+                  <div class="swiper-slide _height">2000</div>
+                  <div class="swiper-slide _height">2000</div>
+                  <div class="swiper-slide _height">2000</div>
+                  <div class="swiper-slide _height">2000</div>
+                  <div class="swiper-slide _height">1500</div>
+                  <div class="swiper-slide _height">400</div>
+                  <div class="swiper-slide _height">200</div>
+                  <div class="swiper-slide _height">1000</div>
+                  <div class="swiper-slide _height">3000</div>
+                  <div class="swiper-slide _height">300</div>
+                  <div class="swiper-slide _height">200</div>
+                  <div class="swiper-slide _height">200</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Сумма кредита, грн.<br>макс. для постоянных клиентов</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Сумма денежных средств, которые может предоставить кредитная организация(сервис) своим  постоянным клиентам в максимально допустимом(возможном)размере при подаче заявки на кредит на этом сервисе. Большинство сервисов  увеличивают сумму кредита  постоянным  клиентам, которые вовремя ( в срок) оплачивают или продлевают свои кредиты, не допуская просрочек. Это означает, что Ваша кредитная история влияет на сумму запрашиваемого кредита.</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">30000</div>
+                  <div class="swiper-slide _height">10000</div>
+                  <div class="swiper-slide _height">8000</div>
+                  <div class="swiper-slide _height">7000</div>
+                  <div class="swiper-slide _height">7000</div>
+                  <div class="swiper-slide _height">10000</div>
+                  <div class="swiper-slide _height">7000</div>
+                  <div class="swiper-slide _height">7000</div>
+                  <div class="swiper-slide _height">200</div>
+                  <div class="swiper-slide _height">20000</div>
+                  <div class="swiper-slide _height">6000</div>
+                  <div class="swiper-slide _height">2000</div>
+                  <div class="swiper-slide _height">10000</div>
+                  <div class="swiper-slide _height">5000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Период кредитования, дни мин.</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Минимальный промежуток времени, в течение которого заемщику разрешается пользоваться кредитными деньгами, прежде чем должен быть  внесен первый платеж за кредит</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">1</div>
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">5</div>
+                  <div class="swiper-slide _height">1</div>
+                  <div class="swiper-slide _height">1</div>
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">1</div>
+                  <div class="swiper-slide _height">180</div>
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">7</div>
+                  <div class="swiper-slide _height">1</div>
+                  <div class="swiper-slide _height">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Период кредитования, дни макс.</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Максимальный промежуток времени, в течение которого заемщику разрешается пользоваться кредитными деньгами, прежде чем должен быть  внесен платеж за кредит. </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">60</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">14</div>
+                  <div class="swiper-slide _height">15</div>
+                  <div class="swiper-slide _height">1440</div>
+                  <div class="swiper-slide _height">30</div>
+                  <div class="swiper-slide _height">16</div>
+                  <div class="swiper-slide _height">45</div>
+                  <div class="swiper-slide _height">16</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Процентная ставка в день, %</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Это сумма, указанная в процентном выражении к сумме, которую платит получатель кредита за пользование  этим кредитом в сутки</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">1,39%-0,51%</div>
+                  <div class="swiper-slide _height">1,70%</div>
+                  <div class="swiper-slide _height">1,40%</div>
+                  <div class="swiper-slide _height">1,72%</div>
+                  <div class="swiper-slide _height">1,60%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,60%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">8,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Время рассмотрения заявки, мин.</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Промежуток времени между подачей заявки на кредит на сайте компании и полученным  результатом о кредите ( в виде смс сообщения, электронного сообщения, усного сообщения)</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">10 мин.</div>
+                  <div class="swiper-slide _height">15 мин.</div>
+                  <div class="swiper-slide _height">15 мин.</div>
+                  <div class="swiper-slide _height">60 мин.</div>
+                  <div class="swiper-slide _height">15 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">30 мин.</div>
+                  <div class="swiper-slide _height">30 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                  <div class="swiper-slide _height">20 мин.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Необходимые документы</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Документы подтверждающие личность или копии копии этих документов, которые надо предоставлять для того чтоб получить кредит</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, банковская карта, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН, справка о доходах</div>
+                  <div class="swiper-slide _height">Паспорт и второй документ, без залога и поручителей</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН</div>
+                  <div class="swiper-slide _height">Паспорт, ИНН</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возраст, мин. макс.</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Количество лет (согласно паспорта), которых  должен достигнуть заемщик чтоб получить кредит. Кредитные организации не выдают кредиты лицам, не достигнувшим 18 лет.</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">от 18 лет</div>
+                  <div class="swiper-slide _height">от 18 лет</div>
+                  <div class="swiper-slide _height">от 18 до 75 лет</div>
+                  <div class="swiper-slide _height">от 20 лет</div>
+                  <div class="swiper-slide _height">от 21 года</div>
+                  <div class="swiper-slide _height">с 20 лет</div>
+                  <div class="swiper-slide _height">с 18 до 75 лет</div>
+                  <div class="swiper-slide _height">с 18 до 60 лет</div>
+                  <div class="swiper-slide _height">с 18 лет</div>
+                  <div class="swiper-slide _height"> 21 до 67 лет</div>
+                  <div class="swiper-slide _height">с 18 до 75 лет</div>
+                  <div class="swiper-slide _height">с 21 до 65 лет</div>
+                  <div class="swiper-slide _height">с 18 до 65 лет</div>
+                  <div class="swiper-slide _height">с 21 до 70 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>География</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Территория, регион где разрешена выдача кредитов</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                  <div class="swiper-slide _height">Украина (кроме Донецкая, Луганская область, АР Крым)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Способ получения кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Как кредитная организация  выдает кредитные  денежные средства </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">на банковскую карту</div>
+                  <div class="swiper-slide _height">наличными</div>
+                  <div class="swiper-slide _height">наличными или на банковскую карту</div>
+                  <div class="swiper-slide _height">наличными</div>
+                  <div class="swiper-slide _height">наличными и на банковскую карту</div>
+                  <div class="swiper-slide _height">наличными</div>
+                  <div class="swiper-slide _height">наличными</div>
+                  <div class="swiper-slide _height">наличными и на банковскую карту</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bank-table-head">Условия оплаты</div>
+          <div class="bank-table__row">
+            
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Различные варианты погашения</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Наличие одной или нескольких вариантов полной  или частичной выплаты задолженности по кредитному договору</div>
+                 
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность продления кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Продление периода, на который первоначально выдан кредит. Это позволяет иметь больше времени чтобы сделать оплату кредита если нет возможности это сделать в установленный срок.</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Стоимость продления кредита(% за продление)</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Это сумма, указанная в процентном выражении к сумме, которую платит получатель кредита за пользование  этим кредитом в сутки</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">&nbsp;</div>
+                  <div class="swiper-slide _height">Сумма начисленной комиссии на тело кредита</div>
+                  <div class="swiper-slide _height">1%</div>
+                  <div class="swiper-slide _height">1,50%</div>
+                  <div class="swiper-slide _height">2%</div>
+                  <div class="swiper-slide _height">1%</div>
+                  <div class="swiper-slide _height">1,80%</div>
+                  <div class="swiper-slide _height">6%</div>
+                  <div class="swiper-slide _height">1%</div>
+                  <div class="swiper-slide _height">нет продления</div>
+                  <div class="swiper-slide _height">3%</div>
+                  <div class="swiper-slide _height">2%</div>
+                  <div class="swiper-slide _height">3%</div>
+                  <div class="swiper-slide _height">2%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность перерасчета суммы при досрочном погашении кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность изменение ранее  начисленных сумм платежей по кредиту в связи с изменением  даты погашения кредита</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность частичного погашения кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность полной  или частичной выплаты задолженности по кредитному договору до наступления даты его окончания.</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность замораживать сумму начисленных штрафов, пени</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Прекращение начисления шрафов, пени  при неуплате по кредиту </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>% ставка штрафа при неуплате кредита в день</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Это сумма, указанная в процентном выражении к сумме, которую платит получатель кредита за пользование  этим кредитом в сутки в случае, если заемщик не вернул кредит в срок  </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">2,99%</div>
+                  <div class="swiper-slide _height">1,50%</div>
+                  <div class="swiper-slide _height">2,99%</div>
+                  <div class="swiper-slide _height">1,50%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">2,50%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">3,99%</div>
+                  <div class="swiper-slide _height">0,33%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">1,99%</div>
+                  <div class="swiper-slide _height">2,50%</div>
+                  <div class="swiper-slide _height">2,50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Единоразовые штрафы за просрочку</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Это эдиноразовая сумма, которую придется заплатить в случае несвоевремменой оплаты по кредиту </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">&nbsp;</div>
+                  <div class="swiper-slide _height">12%</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">14%</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">5%</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">Нет</div>
+                  <div class="swiper-slide _height">4%</div>
+                  <div class="swiper-slide _height">250 грн.</div>
+                  <div class="swiper-slide _height">нет</div>
+                  <div class="swiper-slide _height">При просрочке свыше 14 дней, единоразовый штраф 100 грн.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность получения бонусов без взятия кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Право клиента получать различные бонусы  без условия обязательного  получения кредита </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность переводить бонусы на банковскую карту</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность клиентом  перечислять начисленные бонусы на банковскую карту в виде  денежного эквивалента   </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность получения бонусов за привлеченных друзей получивших кредит</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность клиента получать бонусы за привлеченных друзей, которые получили кредит в сервисе  </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Возможность получения бонусов при возврате другом кредита</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность клиента получать бонусы, когда привлеченный друг погасил свой кредит в сервисе</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                  <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="bank-table-head">Требования к кредитной заявке</div>
+        <div class="bank-table__row">
+          
+          <div class="bank-table-left-col">
+            <div class="bank-table-left__cell _height">
+              <span>Метод идентификации и авторизации клиента</span>
+              <span class="info-butt js_open" onclick="infowindow(this)"></span>
+              <div class="info-box">
+                <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                Возможность клиента получать бонусы, когда привлеченный друг погасил свой кредит в сервисе</div>
+            </div>
+          </div>
+          <div class="bank-table-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">Через представителя компании</div>
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту/ Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту/ Перевод 1 грн.с банковской карты</div>
+                <div class="swiper-slide _height">В отделении компании по паспорту/ Перевод 1 грн.с банковской карты</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bank-table__row">
+          <div class="bank-table-left-col">
+            <div class="bank-table-left__cell _height">
+              <span>Способ подписания договора</span>
+              <span class="info-butt js_open" onclick="infowindow(this)"></span>
+              <div class="info-box">
+                <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                Каким образом происходит юридическое подтверждения согласия клиента с условиями компании</div>
+            </div>
+          </div>
+          <div class="bank-table-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">Подписание доголвора офлайн</div>
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">С помощью электронного кода</div>
+                <div class="swiper-slide _height">В отделении компании</div>
+                <div class="swiper-slide _height">В отделении компании</div>
+                <div class="swiper-slide _height">В отделении компании</div>
+                <div class="swiper-slide _height">С помощью электронного кода/ в отделении компании</div>
+                <div class="swiper-slide _height">В отделении компании</div>
+                <div class="swiper-slide _height">С помощью электронного кода/ в отделении компании</div>
+                <div class="swiper-slide _height">С помощью электронного кода/ в отделении компании</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bank-table__row">
+          <div class="bank-table-left-col">
+            <div class="bank-table-left__cell _height">
+              <span>Дополнительные требования</span>
+              <span class="info-butt js_open" onclick="infowindow(this)"></span>
+              <div class="info-box">
+                <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                Требования  предоставления информации, телефонов, копий документов, которые не описаны на сайте но необходимы чтоб получить кредит </div>
+            </div>
+          </div>
+          <div class="bank-table-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide _height">Нет</div>
+                <div class="swiper-slide _height">Отправить фотографии 1,2 и 11 страниц паспорта и фото идентификационного кода</div>
+                <div class="swiper-slide _height">Отправить фотографии 1,2 и 11 страниц паспорта и фото идентификационного кода</div>
+                <div class="swiper-slide _height">Отправить фотографии 1,2 и 11 страниц паспорта и фото идентификационного кода</div>
+                <div class="swiper-slide _height">Нет</div>
+                <div class="swiper-slide _height">Нет</div>
+                <div class="swiper-slide _height">Отправить фотографии 1,2 и 11 страниц паспорта и фото идентификационного кода</div>
+                <div class="swiper-slide _height">Иметь при себе паспорт и идентификационный номер</div>
+                <div class="swiper-slide _height">Нет</div>
+                <div class="swiper-slide _height">Иметь при себе паспорт и идентификационный номер</div>
+                <div class="swiper-slide _height">Иметь при себе паспорт и идентификационный номер</div>
+                <div class="swiper-slide _height">Нет</div>
+                <div class="swiper-slide _height">Отправить фотографии 1,2 и 11 страниц паспорта и фото идентификационного кода</div>
+                <div class="swiper-slide _height">Иметь при себе паспорт и идентификационный номер</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bank-table__row">
+          <div class="bank-table-left-col">
+            <div class="bank-table-left__cell _height">
+              <span>Возможность проверки информации в личного кабинете</span>
+              <span class="info-butt js_open" onclick="infowindow(this)"></span>
+              <div class="info-box">
+                <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                Способность без ограничений  смотреть и контролировать информацию по заполеннной заявке  на кредит в личном(доступном только клиенту)  кабинете</div>
+            </div>
+          </div>
+          <div class="bank-table-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="red">Невозможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+                <div class="swiper-slide _height"><span class="green">Возможно</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bank-table__row">
+          <div class="bank-table-left-col">
+            <div class="bank-table-left__cell _height">
+              <span>Политика конфиденциальности и шифрования сайта</span>
+              <span class="info-butt js_open" onclick="infowindow(this)"></span>
+              <div class="info-box">
+                <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                Наличие специальных технологий шифрования для защиты и предотвращения разглашения данных клиента во время передачи личной  информации</div>
+            </div>
+          </div>
+          <div class="bank-table-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+                <div class="swiper-slide _height"><span class="green">Да</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bank-table-head">Особенности сервиса</div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Мобильная версия сайта</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Возможность просматривать сайт с мобильных устройств</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Год основания сервиса</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Год  начала  предоставления сервисом  услуг для потребителей</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">2016</div>
+                  <div class="swiper-slide _height">2013</div>
+                  <div class="swiper-slide _height">2013</div>
+                  <div class="swiper-slide _height">2014</div>
+                  <div class="swiper-slide _height">2015</div>
+                  <div class="swiper-slide _height">2016</div>
+                  <div class="swiper-slide _height">2016</div>
+                  <div class="swiper-slide _height">2010</div>
+                  <div class="swiper-slide _height">2011</div>
+                  <div class="swiper-slide _height">2008</div>
+                  <div class="swiper-slide _height">2007</div>
+                  <div class="swiper-slide _height">2013</div>
+                  <div class="swiper-slide _height">2014</div>
+                  <div class="swiper-slide _height">2012</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Время работы сервиса</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Временные рамки, когда работает сервис по выдаче кредитов</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">Круглосуточно</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                  <div class="swiper-slide _height">До 19-00</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                  <div class="swiper-slide _height">До 20-00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Простота в использовании сайта</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Насколько понятно и доступно представлена  информация о процессе выдачи кредитов на сайте компании в интернете</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Отлично</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Средне</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Средне</div>
+                  <div class="swiper-slide _height">Плохо</div>
+                  <div class="swiper-slide _height">Средне</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                  <div class="swiper-slide _height">Средне</div>
+                  <div class="swiper-slide _height">Средне</div>
+                  <div class="swiper-slide _height">Хорошо</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Поддержка по телефону</span>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Поддержка по электронной почте</span>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Поддержка он лайн чата</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Наличие на сайте компании бесплатного сервиса для возможности обмениваться в режиме реального времени информацией с представителями компании</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Контактные данные</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Наличие на сайте компании информации о способах связи с представителями компании</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Вопросы и ответы</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Наличие на сайте компании  информации отвечающей на  стандартные вопросы о процессе  кредитования</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="red">Нет</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                  <div class="swiper-slide _height"><span class="green">Да</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Скорость доступа к сайту</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Степень быстроты отображения  информации представленной на сайте компании на экране клиента</div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Отличная</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bank-table__row">
+            <div class="bank-table-left-col">
+              <div class="bank-table-left__cell _height">
+                <span>Компетентность службы поддержки</span>
+                <span class="info-butt js_open" onclick="infowindow(this)"></span>
+                <div class="info-box">
+                  <span class="close-info-box js_close" onclick="closeinfo(this)"></span>
+                  Скорость ответов и ответы специалистов службы поддержки  на все интересующие вопросы клиентов </div>
+              </div>
+            </div>
+            <div class="bank-table-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide _height">Отличная</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Хорошая</div>
+                  <div class="swiper-slide _height">Средняя</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--           <div class="swiper-button-next table-next"></div>
+          <div class="swiper-button-prev table-prev"></div> -->
+            <!--           <table  id="myTable" class="tbl" cellpadding="0" cellspacing="0">
              <thead>
                 <tr>
                    <th>Название организации</th>
@@ -333,40 +1594,10 @@
                 </tr>
              </thead>
              <tbody>
-                <tr>
-                   <td>Название организации</td>
-                   <td>1Bank</td>
-                   <td>MoneyVeo</td>
-                   <td>Credit365</td>
-                   <td>Moneyboom</td>
-                   <td>CreditUp</td>
-                   <td>УльтраКеш</td>
-                   <td>KLT Credit</td>
-                   <td>Швидкогроші</td>
-                   <td>CashPoint</td>
-                   <td>Кредит Маркет</td>
-                   <td>Быстрозайм</td>
-                   <td>Твої гроші</td>
-                   <td>ТОП-КРЕДИТ</td>
-                   <td>Ваша Готівочка</td>
-                </tr>
-                <tr>
-                   <td>Рейтинг</td>
-                   <td>10.00/10.00</td>
-                   <td>9.6/10.00</td>
-                   <td>9.0/10.00</td>
-                   <td>8.5/10.00</td>
-                   <td>9.1/10.00</td>
-                   <td>9.5/10.00</td>
-                   <td>9.0/10.00</td>
-                   <td>8.5/10.00</td>
-                   <td>8.6/10.00</td>
-                   <td>7.4/10.00</td>
-                   <td>8.8/10.00</td>
-                   <td>8.4/10.00</td>
-                   <td>8.3/10.00</td>
-                   <td>8.7/10.00</td>
-                </tr>
+               <tr>
+                  <th colspan="15">Кредитные особенности</th>
+               </tr>
+             
                 <tr>
                    <td>Сумма кредита, грн.<br>макс. при первом кредите</td>
                    <td>4000</td>
@@ -537,6 +1768,9 @@
                    <td>наличными</td>
                    <td>наличными и на банковскую карту</td>
                 </tr>
+               <tr>
+                  <th colspan="15">Условия оплаты</th>
+               </tr>
                 <tr>
                    <td>Возможность продления кредита</td>
                    <td class="green">Возможно</td>
@@ -1014,8 +2248,29 @@
                    <td>Средняя</td>
                 </tr>
              </tbody>
-          </table>
+          </table> -->
         </div>
+      </div>
+      <div class="text-block text-block--bottom">
+        <i>Чтоб получить кредит  быстро в кредитных организациях  достаточно подать заявку на кредит или в интернете или в отделении компании, на это уходит до 15 минут. Что касается сроков получения ответа на заявку и зачисления денег, то основными факторами здесь являются методы проверки заемщика и варианты получения кредита. Если заявку обрабатывает компьютерная программа скоринга, то ответ приходит практически мгновенно. В ином случае, сроки ожидания решения по заявке могут растянуться на неопределенное время. Если при заполнении заявки на кредит клиент выбирает компанию, где перечисляються кредитные деньги на банковскую карту, то кредитные денежные средства также зачисляются в короткий срок — до 15 минут, если получение кредита  предполагает наличный расчет-  все зависит от графика работы компании.</i>
+        <i>Самый быстрый способ получить кредит без проверок — обратиться к той организации, которая зачисляет кредитные деньги на банковскую карту платежной системы VISA или MasterCard, тогда при положительном решении  по заявке на кредит, воспользоваться ими можно будет буквально через несколько минут после перечисления. Для организаций, которые выдают кредиты наличными - в течении нескольких часов, необходимых, чтобы добраться к ближайшему отделению выдачи денежных средств.</i>
+        <span class="plus">Плюсы быстрого кредитования:</span>
+        <ul class="plus-list">
+          <li>для подачи заявки достаточно доступ в интернет</li>
+          <li>для оформления нужны только паспортные данные</li>
+          <li>трудоустройство и уровень дохода не важны</li>
+          <li>максимально быстрый ответ по заявке</li>
+          <li>несколько вариантов получения денег</li>
+        </ul>
+        <span class="minus">Минусы быстрого кредитования:</span>
+        <ul class="minus-list">
+          <li>относительно высокая процентная ставка</li>
+          <li>короткий срок пользования микрокредитом</li>
+          <li>относительно небольшая сумма микрокредита</li>
+          <li>большая сумма штрафа за просрочку</li>
+        </ul>
+        <i>Максимально большие суммы, которые могут предложить клиентам кредитные организации доступны лишь постоянным клиентам. При первом обращении за кредитными деньгами возможно получить сумму без проверки личности, если запрашивать допустимую для первого кредита сумму и учитывать свою  предыдущую кредитную историю в финансовых компаниях.</i>
+        <i>Чтобы найти быстрые кредиты, которые подойдут Вам, определитесь с кредитной организацией из предложенного списка и  отправьте заявку. Переход в соответствующие разделы сайта выбранной Вами  компании,  осуществляется с главной и внутренних страниц. Быстрые кредиты на нашем сайте доступны только гражданам Украины возрастом от 18 лет.</i>
       </div>
     </section>
     <div class="above-footer"></div>

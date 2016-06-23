@@ -15,7 +15,7 @@
   margin: auto;
   width: 128px;
   height: 128px;
-  opacity: 0;
+  opacity: 1;
   cursor: default;
   pointer-events: none;
   -webkit-transform: translateY(-50%);
